@@ -1,0 +1,33 @@
+body.document {
+  background-color: #111;
+  color: rgb(209,218,222);
+}
+
+div.header {
+  border: 5px solid rgb(200,200,0);
+  border-bottom: none;
+  background-color: rgb(6, 28, 37);
+}
+
+h1.title {
+  font-family: sans-serif;
+  padding-left: 40%;
+  color: rgb(200,200,0)
+}
+
+p.title {
+  padding-left: 10px;
+  color: rgb(209,218,222);
+}
+
+div.docs {
+  font-family: sans-serif;
+  height: 455px;
+  border: 5px solid rgb(200,200,0);
+  background-color: rgb(6,28,37);
+}
+
+div.top {
+  font-family: sans-serif;
+  height: 35px;
+}
