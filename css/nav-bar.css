@@ -6,7 +6,6 @@ div.lateral ul {
   padding: 0px;
   list-style-type: none;
   background-color: #111;
-  position: fixed;
   overflow: auto;
 }
 
@@ -23,7 +22,8 @@ li a:hover {
 }
 
 div.top ul {
-  border-top: 5px solid rgb(200,200,0);
+  border-top: 5px solid rgb(200,200,0);;
+  border-bottom: 5px solid rgb(200,200,0);
   margin: 0px;
   padding: 0px;
   list-style-type: none;
