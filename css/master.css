@@ -49,3 +49,11 @@ div.content {
 div.content a {
   color: rgb(200,200,0);
 }
+
+code.cmd {
+  border-radius: 10px;
+  font-family: monospace;
+  background-color: #444444;
+  padding: 5px;
+  font-size: 105%;
+}
