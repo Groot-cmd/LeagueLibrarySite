@@ -6,6 +6,7 @@ div.lateral ul {
   padding: 0px;
   list-style-type: none;
   background-color: #111;
+  position: fixed;
   overflow: auto;
 }
 
@@ -48,5 +49,5 @@ div.top li img {
 }
 
 li.version {
-  margin-left: 57%;  
+  margin-left: 57%;
 }

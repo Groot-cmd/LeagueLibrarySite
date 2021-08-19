@@ -44,6 +44,9 @@ div.top {
 div.content {
   padding-top: 10px;
   padding-left: 260px;
+  margin-bottom: auto;
+  height: 99%;
+  overflow-y: scroll;
 }
 
 div.content a {
