@@ -5,6 +5,7 @@
     <title>LeagueLibrary</title>
     <link rel="stylesheet" href="css\master.css" type="text/css">
     <link rel="stylesheet" href="css\nav-bar.css">
+    <link rel="stylesheet" href="css\python_light.css">
   </head>
   <body class="document">
     <div class="header">
@@ -39,6 +40,44 @@
         <h2 style="margin-top: 0px;">Before starting </h2>
         <p>For developing your app with this library, make sure you read and understand Riot Games <a href="https://developer.riotgames.com/terms">terms and conditions</a>
           also read the <a href="https://developer.riotgames.com/docs/portal">developer portal</a>.</p>
+          <br>
+        <h2 style="margin-top: 0px;">The basic</h2>
+        <p>First we will instantiate the Host class and store it in a variable which in our case we will use the host variable:<br><br>
+
+          <code class="python">host = LeagueLibrary.host.Host(<span class="string">'platformID'</span>, <span class="string">'region'</span>,<span class="string">'Token'</span>)</code>
+        the variable is very important as we will use it later.</p>
+
+        <p>The platformID parameter accepts the following values, <code class="python">[<span class="string">"br1"</span>,<span class="string">"eun1"</span>,
+          <span class="string">"euw1"</span>,<span class="string">"jp1"</span>,<span class="string">"kr"</span>,<span class="string">"la1"</span>,
+          <span class="string">"la2"</span>,<span class="string">"na1"</span>,<span class="string">"oc1"</span>,<span class="string">"tr1"</span>,
+          <span class="string">"ru"</span>]</code>.</p>
+
+        <p>The regions parameter accepts the following values,
+          <code class="python">[<span class="string">"americas"</span>,<span class="string">"asia"</span>,<span class="string">"europe"</span>]</code>.</p>
+
+        <p>The Token parameter is your api key obtained through the official Riot Games API website.</p>
+
+        <p>Now we will instantiate the Summoner class and store it in a variable that in our case we will use the summoner variable and pass the host variable as a parameter.
+        we stated previously:<br><br>
+
+        <code class="python">summoner = LeagueLibrary.summoner.Summoner(host)</code>
+        The variable is very important we will use later.</p>
+
+        <p>Currently the Summoner class has only 4 (four methods) being them, byEncryptedAccountId, bySummonerName, byEncryptedPUUID and byEncryptedPUUID, in our case we will use,
+        bySummonerName passing as parameter a valid invoker name on the previously chosen server:<br><br>
+        <code class="python">summoner.bySummonerName(<span class="string">'summonerName'</span>)</code>.</p>
+
+        <p>In this case, it is not necessary to store it in any variable, as we can access the values ​​returned in an internal variable of the byNameJson class.</p>
+
+        <p>To get the values ​​we will use the class variable which in our case is summoner followed by the name of the internal variable byNameJson,
+        with Python's <code class="python"><span class="builtins">print</span>()</code> function: <code class="python"><span class="builtins">print</span>(summoner.byNameJson)</code> will print all values ​​in a dictionary in the terminal.</p>
+
+        <p>We can also store the values ​​returned from the method in a variable:<br><br>
+          <code class="python">summoner1 = summoner.bySummonerName(<span class="string">'summonerName'</span>)</code><br><br>
+          Method called and stored in the variable summoner1</p>
+
+        <p><code class="python"><span class="builtins">print</span>(summoner1)</code> will return the full dictionary<br><br>
+        <code class="python"><span class="builtins">print</span>(summoner1[<span class="string">'id'</span>])</code> will return the value of the key passed.</p>
       </div>
     </div>
   </body>
