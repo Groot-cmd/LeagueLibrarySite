@@ -22,7 +22,9 @@ li a:hover {
 }
 
 div.top ul {
-  border-top: 5px solid rgb(200,200,0);;
+  display: inline-flex;
+  width: 100%;
+  border-top: 5px solid rgb(200,200,0);
   border-bottom: 5px solid rgb(200,200,0);
   margin: 0px;
   padding: 0px;
@@ -31,9 +33,16 @@ div.top ul {
 }
 
 div.top li {
-  display:inline-block;
+  display: inline-flex;
 }
 
 div.top a {
   padding: 8px;
+}
+
+div.top li img {
+  height: 20px;
+  padding-top: 3px;
+  margin: 4px;
+  width: 100%;
 }
