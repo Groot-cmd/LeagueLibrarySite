@@ -46,3 +46,7 @@ div.top li img {
   margin: 4px;
   width: 100%;
 }
+
+li.version {
+  margin-left: 57%;  
+}
