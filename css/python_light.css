@@ -1,0 +1,31 @@
+code.python {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(255,255,255);
+  color: rgb(0,0,0);
+}
+
+code.python span.comments {
+  color: rgb(221, 0, 0);
+}
+
+code.python span.keywords {
+  color: rgb(255, 119, 0);
+}
+
+code.python span.definitions {
+  color: rgb(0, 0, 255);
+}
+
+code.python span.builtins{
+  color: rgb(144, 0, 144);
+}
+
+code.python span.output {
+  color: rgb(0, 0, 255);
+
+}
+
+code.python span.string {
+  color: rgb(0, 170, 0);
+}
